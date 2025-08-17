@@ -7,6 +7,7 @@
  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleDark()">🌙 Dark</button>
   <header class="blog-header">
     <h1>Getting Started with Laravel</h1>
     <p>Published on Feb 2025 | by Puneet Tomar</p>
@@ -26,4 +27,15 @@
   <footer><a href="index.html">← Back to Portfolio</a></footer>
 </body>
 </html>
+<script>
+  function toggleDark(){
+    document.body.classList.toggle("dark");
+    let btn = document.querySelector(".toggle-btn");
+    if(document.body.classList.contains("dark")){
+      btn.textContent = "☀️ Light";
+    } else {
+      btn.textContent = "🌙 Dark";
+    }
+  }
+</script>
 
