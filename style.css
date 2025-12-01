@@ -77,5 +77,5 @@ button:hover{filter:brightness(.95)}
   .menu-icon{display:inline-block}
 }
 
-.footer{text-align:center;padding:20px;background:var(--muted);color:var(--text);font-size:0.9rem}
+.footer-foo{text-align:center;padding:20px;background:var(--muted);color:var(--text);font-size:0.9rem}
 
