@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laravel Filament Admin Dashboard | Puneet Tomar</title>
+  <meta name="description" content="Laravel 12 Filament Admin Dashboard with RBAC, Livewire, REST API – built by Puneet Tomar, Full Stack PHP/Laravel Developer." />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img class="logo-img" alt="PT Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%235b47fb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
+      Puneet Tomar
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.html" class="resume-btn" target="_blank">📄 Resume</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="menu-icon" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <div class="project-detail-hero">
+    <div class="hero-badge" style="margin-bottom:16px">⭐ Featured Project</div>
+    <h1>Laravel Filament Admin Dashboard</h1>
+    <p>A production-grade admin panel with role-based access control, CRUD modules, Livewire components, and REST API integration.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px">
+      <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💻 View on GitHub</a>
+      <a href="index.html#projects" class="btn btn-outline">← Back to Projects</a>
+    </div>
+  </div>
+
+  <div class="project-detail-content">
+
+    <div class="project-detail-card fade-in">
+      <h2>🛠️ Tech Stack</h2>
+      <div class="tech-stack" style="margin-top:4px">
+        <span class="tech-badge">Laravel 12</span>
+        <span class="tech-badge">Filament</span>
+        <span class="tech-badge">Livewire</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">Tailwind CSS</span>
+        <span class="tech-badge">REST API</span>
+        <span class="tech-badge">PHP 8.x</span>
+        <span class="tech-badge">Vite</span>
+        <span class="tech-badge">RBAC</span>
+      </div>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>📋 Project Overview</h2>
+      <p>
+        This project is a fully-featured <strong>Admin Dashboard</strong> built with <strong>Laravel 12</strong> and <strong>Filament</strong>, designed to demonstrate enterprise-level admin panel development. The application features a secure multi-user system with role-based access control, dynamic CRUD modules, and a REST API layer for seamless frontend integration.
+      </p>
+      <p style="margin-top:12px">
+        The project was built as a personal showcase to demonstrate the ability to architect scalable, maintainable Laravel applications that follow best practices — the same patterns used in production at companies like SciAstra.
+      </p>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>✅ Key Features</h2>
+      <ul>
+        <li>Secure <strong>authentication &amp; role-based access control (RBAC)</strong> — Admin, Manager, User roles</li>
+        <li><strong>Filament admin panel</strong> with custom pages, widgets, and resource management</li>
+        <li>Full <strong>CRUD modules</strong> for User Management, Content Management, and Settings</li>
+        <li><strong>Livewire components</strong> for real-time UI updates without page refresh</li>
+        <li><strong>REST API endpoints</strong> secured with Laravel Sanctum for frontend consumption</li>
+        <li>MySQL database with <strong>optimized queries</strong> using Eloquent ORM and eager loading</li>
+        <li>Responsive UI built with <strong>Tailwind CSS</strong></li>
+        <li>Form validation, error handling, and flash notifications</li>
+        <li>Activity logging and audit trails for admin actions</li>
+        <li>Developed with <strong>GitHub Copilot &amp; ChatGPT</strong> for rapid prototyping</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>🏗️ Architecture</h2>
+      <ul>
+        <li>Follows <strong>MVC Architecture</strong> with clear separation of concerns</li>
+        <li>Service layer pattern for business logic, keeping controllers thin</li>
+        <li>Repository pattern for database abstraction &amp; testability</li>
+        <li>Laravel Policies &amp; Gates for fine-grained authorization</li>
+        <li>API Resources for consistent JSON response formatting</li>
+        <li>Laravel Middleware for authentication, logging, and rate limiting</li>
+        <li>Vite for fast asset compilation and HMR in development</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>💡 What I Learned / Demonstrated</h2>
+      <ul>
+        <li>How to build and customize Filament resource panels at scale</li>
+        <li>Structuring complex Laravel apps with multiple user roles</li>
+        <li>Writing optimized MySQL queries to prevent N+1 problems</li>
+        <li>Integrating Livewire for reactive, SPA-like user experiences</li>
+        <li>API design best practices — versioning, authentication, response consistency</li>
+        <li>Effective use of AI-assisted tools to speed up development 40%+</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in" style="text-align:center">
+      <h2>🔗 Links</h2>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+        <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-code">💻 GitHub Repository</a>
+        <a href="index.html#projects" class="btn btn-demo">← All Projects</a>
+        <a href="index.html#contact" class="btn btn-ghost">✉️ Hire Me</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Puneet Tomar</div>
+      <p>&copy; 2026 Puneet Tomar · Full Stack PHP / Laravel Developer</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

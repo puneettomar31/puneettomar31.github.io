@@ -3,236 +3,625 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Puneet Tomar | Full-Stack Developer</title>
- <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Puneet Tomar | Full Stack PHP / Laravel Developer</title>
+  <meta name="description" content="Puneet Tomar – Full Stack PHP/Laravel Developer with 2 years experience. Skilled in Laravel 12, Filament, Livewire, Tailwind CSS, REST APIs, MySQL. Open to MNC opportunities." />
+  <meta name="keywords" content="Puneet Tomar, Laravel Developer, PHP Developer, Full Stack Developer, Filament, Livewire, Tailwind CSS, REST API, MySQL, EdTech, Web Developer India" />
+  <meta name="author" content="Puneet Tomar" />
+  <meta property="og:title" content="Puneet Tomar | Full Stack PHP / Laravel Developer" />
+  <meta property="og:description" content="2+ years building web apps, REST APIs & admin dashboards with Laravel. Currently at SciAstra." />
+  <meta property="og:url" content="https://puneettomar31.github.io" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header id="home" class="fade-in">
-    <nav class="navbar">
-      <div class="logo">
-        <!-- inline data-uri logo, no separate image file needed -->
-        <img class="logo-img" alt="Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='12' width='64' height='64' fill='%23007bff'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='30' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
-        Puneet Tomar
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="assets/Puneet_Tomar_Resume_developer.pdf" class="resume-btn" target="_blank">📄 Resume</a>
-       </li>
-      </ul>
-      <div class="nav-ctas">
-        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="menu-icon" id="menuBtn" aria-label="Open menu">☰</button>
-      </div>
-    </nav>
-    <div class="hero">
-      <h1>Full-Stack Developer</h1>
-      <p>Laravel · Core PHP · Linux & FTP</p>
-      <a href="#contact" class="btn">Contact Me</a>
+  <nav class="navbar" id="home">
+    <div class="logo">
+      <img class="logo-img" alt="PT Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%235b47fb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
+      Puneet Tomar
     </div>
-  </header>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.html" class="resume-btn" target="_blank">📄 Resume</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="menu-icon" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
 
-    <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>
-        Dynamic and results-driven <b>Full-Stack Developer</b> with over 3 years of 
-        professional experience, including <b>2+ years in web development</b> and 
-        <b>1 year in a BPO environment</b>.  
-        Skilled in Laravel, PHP, JavaScript, MySQL, and WordPress with expertise in 
-        API integrations, secure deployments, and Linux/FTP workflows.  
-        Strong communication and client-handling skills gained in BPO complement 
-        technical expertise to deliver scalable and user-friendly web solutions.
-    </p>
-    </section>
-
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <div class="cards-grid">
-      <div class="card"><h3>Languages</h3><p>HTML5, CSS3, JavaScript, PHP (Core PHP)</p></div>
-      <div class="card"><h3>Frameworks</h3><p>Laravel 11, Bootstrap 5, jQuery, React (basic), WordPress</p></div>
-      <div class="card"><h3>Databases & Tools</h3><p>MySQL, phpMyAdmin, REST API, Git/GitHub, Linux, FTP</p></div>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">👨‍💻 Available for Opportunities</div>
+      <h1>
+        <span>Hi, I'm Puneet Tomar</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span id="typedText"></span><span class="typed-cursor"></span>
+      </div>
+      <p class="hero-desc">
+        Full Stack PHP / Laravel Developer with 2+ years building EdTech platforms, REST APIs &amp; admin dashboards. Currently at SciAstra, shipping production-ready Laravel 12 applications.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
+        <a href="resume.html" target="_blank" class="btn btn-outline">📄 Download Resume</a>
+        <a href="#contact" class="btn btn-outline">✉️ Hire Me</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/puneet-tomar-ab2a19193" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:puneettmr31@gmail.com">
+          📧 puneettmr31@gmail.com
+        </a>
+      </div>
     </div>
   </section>
 
-<section id="projects" class="fade-in">
-  <h2>Projects</h2>
-  <div class="cards-grid">
-
-    <div class="card">
-      <img class="thumb" src="./images/Laravel-for-E-commerce.webp" alt="Laravel E-Commerce Backend">
-      <h3>Laravel E-Commerce Backend</h3>
-      <p>
-        Built a scalable backend with <b>role-based login</b>, product/category/brand 
-        <b>CRUD modules</b>, SEO fields, and integrated <b>payment gateways</b>.  
-        Optimized queries and implemented <b>REST API</b> for frontend/mobile use.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/puneettomar31/ecommerce-backend" target="_blank" class="btn">View Code</a>
-        <a href="https://puneettomar31.github.io/ecommerce-demo" target="_blank" class="btn secondary">Live Demo</a>
-      </div>
+  <!-- ===== STATS ===== -->
+  <div class="stats-bar">
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="2">0</div>
+      <div class="stat-label">Years Experience</div>
     </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/job-board.jpg" alt="Job Board Application">
-      <h3>Job Board Application</h3>
-      <p>
-        Developed a complete job portal in Laravel with <b>job posting, applications, 
-        and employer dashboards</b>. Added role-based access (Admin/Employer/Jobseeker) 
-        and secure authentication system.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/puneettomar31/job-board" target="_blank" class="btn">View Code</a>
-        <a href="https://puneettomar31.github.io/job-board" target="_blank" class="btn secondary">Live Demo</a>
-      </div>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="10">0</div>
+      <div class="stat-label">Projects Built</div>
     </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/role-based-portal.webp" alt="Role-Based Portal">
-      <h3>Laravel Role-Based Portal</h3>
-      <p>
-        Robust <b>multi-user system</b> with advanced authentication guards, 
-        user permissions, secure sessions, and detailed activity auditing.  
-        Perfect for scalable enterprise apps.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/puneettomar31/role-based-portal" target="_blank" class="btn">View Code</a>
-        <a href="https://puneettomar31.github.io/role-based-portal" target="_blank" class="btn secondary">Live Demo</a>
-      </div>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="5">0</div>
+      <div class="stat-label">Companies Worked</div>
     </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/frontend-mini.webp" alt="Frontend Mini Project">
-      <h3>Frontend Mini Project</h3>
-      <p>
-        Designed a responsive <b>HTML/CSS/JS website</b> with interactive UI 
-        components, smooth animations, and reusable layouts for quick prototypes.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/puneettomar31/frontend-mini" target="_blank" class="btn">View Code</a>
-        <a href="https://puneettomar31.github.io/frontend-mini" target="_blank" class="btn secondary">Live Demo</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="blog" class="fade-in">
-  <h2>Latest Blog Posts</h2>
-  <div class="cards-grid">
-
-    <div class="card">
-      <img class="thumb" src="./images/laravel-blog.png" alt="Laravel Blog">
-      <h3>Getting Started with Laravel</h3>
-      <p>Why Laravel is my go-to framework for building scalable, secure apps.</p>
-      <div class="project-links">
-        <a href="blog1.html" class="btn">Read More</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/speed.png" alt="WordPress Speed">
-      <h3>Optimizing WordPress for Speed</h3>
-      <p>Real-world tips from client projects to reduce load time and boost SEO.</p>
-      <div class="project-links">
-        <a href="blog2.html" class="btn">Read More</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/linux.png" alt="Linux Laravel Deployment">
-      <h3>Deploying Laravel on Linux/FTP</h3>
-      <p>My step-by-step deployment workflow with Linux servers and FTP access.</p>
-      <div class="project-links">
-        <a href="blog3.html" class="btn">Read More</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="thumb" src="./images/corephp.png" alt="Core PHP">
-      <h3>Core PHP Basics</h3>
-      <p>How mastering Core PHP made me a better Laravel and WordPress developer.</p>
-      <div class="project-links">
-        <a href="blog4.html" class="btn">Read More</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
- <section id="experience" class="fade-in">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>Junior Laravel Developer – Eglogics Softech Pvt Ltd (Feb 2025 – Present)</h3>
-      <p>Live Laravel application development, database design, API integration, bug fixes.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Intern – PHP Laravel Developer – LETSWRITE (Sep 2024 – Feb 2025)</h3>
-      <p>Developed Laravel apps, CRUD modules, authentication, and database optimization.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Web Development Training – VIDHYASHALA (Sep 2024 – Dec 2024)</h3>
-      <p>Full-stack training in Laravel, PHP, MySQL, and responsive frontend design.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Intern – WordPress Developer – Let The Trend (Jul 2024 – Sep 2024)</h3>
-      <p>Created responsive websites, optimized themes, improved load speed.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Web Development Training – Aptron Solutions Pvt Ltd (May 2024 – Jul 2024)</h3>
-      <p>Hands-on training in PHP, HTML, CSS, JavaScript, and MySQL projects.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Intern – Web Developer – Step1 Advertising Pvt Ltd (Jul 2022 – Dec 2022)</h3>
-      <p>Worked on client-side projects, frontend design, and backend integration.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Associate Executive – iEnergizer Pvt Ltd (BPO) (Aug 2021 – Jun 2022)</h3>
-      <p>Provided customer support, communication handling, and problem-solving.</p>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="3">0</div>
+      <div class="stat-label">Laravel Versions</div>
     </div>
   </div>
-</section>
 
- <section id="education" class="fade-in">
-  <h2>Education & Certificates</h2>
-  <ul class="list">
-    <li><strong>MCA</strong> – Dr. A.P.J. Abdul Kalam Technical University (2017–2019)</li>
-    <li><strong>BCA</strong> – C.C.S University (2014–2017)</li>
-    <li><strong>Certificates:</strong>
-      <ul>
-        <li>Full-Stack Development Training – Vidhyashala (Oct 2024 – Jan 2025)</li>
-        <li>Web Designing & PHP Development – Aptron Solutions (May 2024 – Jul 2024)</li>
-        <li>Common Internship Test (CIT) – Jun 2024</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/xjkozpwb" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="contact-info">
-      <p>📧 <a href="mailto:puneettmr31@gmail.com">puneettmr31@gmail.com</a></p>
-      <p>📞 <a href="tel:+919643948093">+91-9643948093</a></p>
-      <p>🌐 <a href="https://puneettomar31.github.io/" target="_blank">puneettomar31.github.io</a></p>
-      <p>🔗 <a href="https://www.linkedin.com/in/puneet-tomar-ab2a19193" target="_blank">linkedin.com/in/puneet-tomar</a></p>
-      <p>💻 <a href="https://github.com/puneettomar31" target="_blank">github.com/puneettomar31</a></p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— About Me —</span>
+        <h2>Who Am I?</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap slide-left">
+          <div class="about-avatar-ring"></div>
+          <div class="about-avatar">PT</div>
+        </div>
+        <div class="about-text slide-right">
+          <h3>Puneet Tomar</h3>
+          <span class="role-tag">Full Stack PHP / Laravel Developer</span>
+          <p>
+            Full Stack Laravel Developer with <strong>2 years of hands-on experience</strong> building production-grade web applications, REST APIs, and admin dashboards. Currently working at <strong>SciAstra</strong> on an EdTech learning platform using <strong>Laravel 12, Filament, Livewire, Tailwind CSS, and MySQL</strong>.
+          </p>
+          <p>
+            Experienced in backend development, API integration, database design, and frontend implementation. I leverage <strong>AI-assisted coding tools</strong> like GitHub Copilot and ChatGPT to accelerate development, optimize code quality, and ship faster — making me ready for fast-paced MNC environments.
+          </p>
+          <div class="about-details">
+            <div class="about-detail-item">
+              <span class="icon">📍</span>
+              <div><strong>Location</strong><br/><span>India</span></div>
+            </div>
+            <div class="about-detail-item">
+              <span class="icon">💼</span>
+              <div><strong>Current Role</strong><br/><span>SciAstra (Jan 2026–Present)</span></div>
+            </div>
+            <div class="about-detail-item">
+              <span class="icon">🎓</span>
+              <div><strong>Education</strong><br/><span>MCA – AKTU</span></div>
+            </div>
+            <div class="about-detail-item">
+              <span class="icon">🤖</span>
+              <div><strong>AI Tools</strong><br/><span>GitHub Copilot, ChatGPT</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="footer-foo">&copy; 2025 Puneet Tomar. All rights reserved.</footer>
+  <!-- ===== SKILLS ===== -->
+  <div class="section-alt" id="skills">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Skills —</span>
+        <h2>Technical Expertise</h2>
+        <p>Technologies I work with daily to build scalable, production-ready applications</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">🖥️</div>
+            Languages
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">PHP</span>
+            <span class="skill-tag primary">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">SCSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">⚙️</div>
+            Frameworks
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Laravel 12</span>
+            <span class="skill-tag primary">Laravel 11</span>
+            <span class="skill-tag">Laravel 10</span>
+            <span class="skill-tag">Livewire</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">🎨</div>
+            Frontend
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Blade</span>
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">React (Basic)</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">🛠️</div>
+            Admin &amp; Tools
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Filament</span>
+            <span class="skill-tag primary">Git / GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Swagger</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">🗄️</div>
+            Database
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">MySQL</span>
+            <span class="skill-tag">Query Optimization</span>
+            <span class="skill-tag">DB Design</span>
+            <span class="skill-tag">Eloquent ORM</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">💡</div>
+            Concepts
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">REST APIs</span>
+            <span class="skill-tag">MVC Architecture</span>
+            <span class="skill-tag">Authentication</span>
+            <span class="skill-tag">Authorization</span>
+            <span class="skill-tag">Middleware</span>
+            <span class="skill-tag">CRUD</span>
+            <span class="skill-tag">Validation</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title">
+            <div class="skill-icon">🤖</div>
+            AI-Assisted Coding
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">GitHub Copilot</span>
+            <span class="skill-tag primary">ChatGPT</span>
+            <span class="skill-tag">Rapid Prototyping</span>
+            <span class="skill-tag">Code Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Projects —</span>
+        <h2>Featured Projects</h2>
+        <p>Real-world applications built with modern PHP/Laravel stack</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-thumb">🛡️</div>
+          <div class="project-body">
+            <div class="project-type">⭐ Featured · Personal Project</div>
+            <h3>Laravel Filament Admin Dashboard</h3>
+            <p>Secure admin panel with role-based access control, CRUD modules for user &amp; content management, and REST API endpoints for frontend integration. Built using latest Laravel 12 and Filament.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Laravel 12</span>
+              <span class="tech-badge">Filament</span>
+              <span class="tech-badge">Livewire</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="project-filament-admin.html" class="btn btn-code">View Details</a>
+              <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-demo">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">📚</div>
+          <div class="project-body">
+            <div class="project-type">⭐ Featured · Personal Project</div>
+            <h3>EdTech Course Management System</h3>
+            <p>Full-featured course management platform handling student enrollment, course modules, and progress tracking. Developed REST APIs for frontend consumption with Livewire-driven UI.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">Livewire</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="project-edtech.html" class="btn btn-code">View Details</a>
+              <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-demo">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="./images/Laravel-for-E-commerce.webp" alt="E-Commerce Backend" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-type">Personal Project</div>
+            <h3>Laravel E-Commerce Backend</h3>
+            <p>Scalable backend with role-based login, product/category/brand CRUD modules, SEO fields, integrated payment gateways, and REST API for mobile/frontend consumption.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">Payment Gateway</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-code">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="./images/job-board.jpg" alt="Job Board" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-type">Personal Project</div>
+            <h3>Job Board Application</h3>
+            <p>Complete job portal with job posting, employer dashboards, and role-based access (Admin / Employer / Job Seeker). Secure authentication with session management.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Authentication</span>
+              <span class="tech-badge">RBAC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-code">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <div class="section-alt" id="experience">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Experience —</span>
+        <h2>Professional Journey</h2>
+        <p>2+ years delivering real-world Laravel applications across EdTech, enterprise, and product companies</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Full Stack PHP / Laravel Developer</h3>
+              <span class="timeline-badge badge-current">🟢 Current</span>
+            </div>
+            <div class="timeline-company">SciAstra &mdash; Jan 2026 – Present</div>
+            <ul>
+              <li>Working on an EdTech learning platform offering prep courses for IAT, NEST, JEE &amp; NEET</li>
+              <li>Developing backend features using <strong>Laravel 12</strong></li>
+              <li>Building interactive admin dashboards using <strong>Filament</strong> and <strong>Livewire</strong></li>
+              <li>Creating REST APIs for frontend consumption</li>
+              <li>Implementing UI components with HTML, SCSS, JavaScript, and Tailwind CSS</li>
+              <li>Optimizing MySQL queries and improving application performance</li>
+              <li>Leveraging <strong>GitHub Copilot &amp; ChatGPT</strong> for rapid prototyping and code optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Junior Laravel Developer</h3>
+              <span class="timeline-badge">Feb 2025 – Dec 2025</span>
+            </div>
+            <div class="timeline-company">Eglogics Softech Pvt. Ltd.</div>
+            <ul>
+              <li>Developed Laravel modules and REST APIs for live production applications</li>
+              <li>Implemented authentication, authorization, and middleware systems</li>
+              <li>Built admin dashboards and optimized MySQL queries for performance</li>
+              <li>Documented APIs using <strong>Swagger (OpenAPI)</strong></li>
+              <li>Utilized AI-assisted coding tools for faster coding and debugging</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>PHP Laravel Developer (Intern)</h3>
+              <span class="timeline-badge">Sep 2024 – Feb 2025</span>
+            </div>
+            <div class="timeline-company">LetsWrite</div>
+            <ul>
+              <li>Developed CRUD modules using Laravel with validation and middleware</li>
+              <li>Implemented authentication systems and user session management</li>
+              <li>Assisted in REST API development and testing using Postman</li>
+              <li>Used AI-assisted coding tools to improve development speed and accuracy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Web Developer (Intern)</h3>
+              <span class="timeline-badge">Jul 2024 – Sep 2024</span>
+            </div>
+            <div class="timeline-company">Let The Trend</div>
+            <ul>
+              <li>Built responsive websites using HTML, CSS, and Bootstrap</li>
+              <li>Converted UI designs into functional, cross-browser web pages</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Self Learning &amp; Project Development</h3>
+              <span class="timeline-badge">2023 – Mid 2024</span>
+            </div>
+            <div class="timeline-company">Independent</div>
+            <ul>
+              <li>Strengthened PHP and Laravel fundamentals through hands-on projects</li>
+              <li>Built admin dashboards and CRUD-based practice systems</li>
+              <li>Learned REST API development and testing with Postman</li>
+              <li>Improved database design and MVC architecture understanding</li>
+              <li>Practiced AI-assisted coding using GitHub Copilot and ChatGPT</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Web Developer (Intern)</h3>
+              <span class="timeline-badge">Jul 2022 – Oct 2022</span>
+            </div>
+            <div class="timeline-company">Step1 Advertising Pvt. Ltd.</div>
+            <ul>
+              <li>Developed static and dynamic web pages using PHP and frontend technologies</li>
+              <li>Worked on website maintenance and UI improvements</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Education —</span>
+        <h2>Education &amp; Certifications</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h4>MCA</h4>
+            <p>Dr. A.P.J. Abdul Kalam Technical University</p>
+            <div class="year">Master of Computer Applications</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h4>BCA</h4>
+            <p>C.C.S University</p>
+            <div class="year">Bachelor of Computer Applications</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏅</div>
+          <div class="edu-info">
+            <h4>Full Stack Development</h4>
+            <p>Vidhyashala</p>
+            <div class="year">Certification</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏅</div>
+          <div class="edu-info">
+            <h4>Web Designing &amp; PHP Development</h4>
+            <p>Aptron Solutions</p>
+            <div class="year">Certification</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <div class="section-alt" id="blog">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Blog —</span>
+        <h2>Latest Articles</h2>
+        <p>Technical insights from real-world Laravel development experience</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img class="blog-thumb" src="./images/laravel-blog.png" alt="Laravel Blog" loading="lazy">
+          <div class="blog-body">
+            <div class="blog-category">Laravel</div>
+            <h3>Getting Started with Laravel</h3>
+            <p>Why Laravel is my go-to framework for building scalable, secure web applications.</p>
+            <a href="blog1.html" class="btn">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img class="blog-thumb" src="./images/speed.png" alt="Performance" loading="lazy">
+          <div class="blog-body">
+            <div class="blog-category">Performance</div>
+            <h3>Optimizing Laravel for Speed</h3>
+            <p>Real-world tips from production projects to reduce server response time and boost performance.</p>
+            <a href="blog2.html" class="btn">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img class="blog-thumb" src="./images/linux.png" alt="Deployment" loading="lazy">
+          <div class="blog-body">
+            <div class="blog-category">DevOps</div>
+            <h3>Deploying Laravel on Linux</h3>
+            <p>My step-by-step deployment workflow with Linux servers and FTP access.</p>
+            <a href="blog3.html" class="btn">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img class="blog-thumb" src="./images/corephp.png" alt="Core PHP" loading="lazy">
+          <div class="blog-body">
+            <div class="blog-category">PHP</div>
+            <h3>Core PHP Basics</h3>
+            <p>How mastering Core PHP made me a stronger Laravel developer.</p>
+            <a href="blog4.html" class="btn">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section fade-in">
+      <div class="section-header">
+        <span class="section-tag">— Contact —</span>
+        <h2>Let's Work Together</h2>
+        <p>Open to full-time opportunities at product companies and MNCs. Let's connect!</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info-side">
+          <h3>Get In Touch</h3>
+          <p>I'm actively looking for full-time Laravel / PHP developer roles in MNCs and product companies. Drop me a message or reach out on any platform below.</p>
+          <div class="contact-links">
+            <a href="mailto:puneettmr31@gmail.com" class="contact-link-item">
+              <div class="c-icon">📧</div>
+              <div><strong>Email</strong><br/><span>puneettmr31@gmail.com</span></div>
+            </a>
+            <a href="tel:+919643948093" class="contact-link-item">
+              <div class="c-icon">📞</div>
+              <div><strong>Phone</strong><br/><span>+91-9643948093</span></div>
+            </a>
+            <a href="https://linkedin.com/in/puneet-tomar-ab2a19193" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="c-icon">🔗</div>
+              <div><strong>LinkedIn</strong><br/><span>puneet-tomar-ab2a19193</span></div>
+            </a>
+            <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+              <div class="c-icon">💻</div>
+              <div><strong>GitHub</strong><br/><span>github.com/puneettomar31</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3>Send a Message</h3>
+          <form action="https://formspree.io/f/xjkozpwb" method="POST" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Your Email</label>
+                <input type="email" id="femail" name="_replyto" placeholder="john@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="Job Opportunity / Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message ✉️</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Puneet Tomar</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html" target="_blank">Resume</a>
+      </div>
+      <p>Full Stack PHP / Laravel Developer &nbsp;|&nbsp; Open to MNC Opportunities</p>
+      <p style="margin-top:6px">&copy; 2026 Puneet Tomar. All rights reserved.</p>
+    </div>
+  </footer>
 
 <script src="./script.js"></script>
 </body>

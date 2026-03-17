@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EdTech Course Management System | Puneet Tomar</title>
+  <meta name="description" content="EdTech Course Management Platform built with Laravel, Livewire, Tailwind and REST API by Puneet Tomar." />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img class="logo-img" alt="PT Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%235b47fb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
+      Puneet Tomar
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.html" class="resume-btn" target="_blank">📄 Resume</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="menu-icon" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <div class="project-detail-hero">
+    <div class="hero-badge" style="margin-bottom:16px">⭐ Featured Project</div>
+    <h1>EdTech Course Management System</h1>
+    <p>A full-featured course platform handling student enrollment, course modules, progress tracking, and REST API — similar to the EdTech system at SciAstra.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px">
+      <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💻 View on GitHub</a>
+      <a href="index.html#projects" class="btn btn-outline">← Back to Projects</a>
+    </div>
+  </div>
+
+  <div class="project-detail-content">
+
+    <div class="project-detail-card fade-in">
+      <h2>🛠️ Tech Stack</h2>
+      <div class="tech-stack" style="margin-top:4px">
+        <span class="tech-badge">Laravel</span>
+        <span class="tech-badge">Livewire</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">Tailwind CSS</span>
+        <span class="tech-badge">REST API</span>
+        <span class="tech-badge">PHP 8.x</span>
+        <span class="tech-badge">Blade Templates</span>
+        <span class="tech-badge">Laravel Sanctum</span>
+        <span class="tech-badge">Vite</span>
+      </div>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>📋 Project Overview</h2>
+      <p>
+        The <strong>EdTech Course Management System</strong> is a comprehensive learning platform built to handle the full student lifecycle — from registration to course completion. This project is inspired by and closely mirrors the EdTech platform I build at <strong>SciAstra</strong>, where students prepare for competitive exams like IAT, NEST, JEE, and NEET.
+      </p>
+      <p style="margin-top:12px">
+        The system provides course creators with tools to manage content, and students with an intuitive interface to enroll, track progress, and access learning material — all powered by a <strong>robust Laravel backend with Livewire-driven reactive UI</strong>.
+      </p>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>✅ Key Features</h2>
+      <ul>
+        <li><strong>Student registration &amp; authentication</strong> with email verification</li>
+        <li><strong>Course catalog</strong> with categories, filters, and search functionality</li>
+        <li><strong>Student enrollment system</strong> with enrollment status tracking</li>
+        <li><strong>Course module management</strong> — create, update, delete lessons and chapters</li>
+        <li>Progress tracking — students can mark lessons complete, see % progress</li>
+        <li><strong>REST API</strong> secured with Laravel Sanctum for mobile/frontend integration</li>
+        <li><strong>Livewire</strong> for real-time search, enrollment, and progress updates</li>
+        <li>Admin panel for managing students, courses, and enrollments</li>
+        <li>MySQL database with optimized queries and proper indexing</li>
+        <li>Built using <strong>GitHub Copilot &amp; ChatGPT</strong> to streamline development</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>🏗️ Architecture &amp; Design</h2>
+      <ul>
+        <li><strong>MVC Architecture</strong> — clean separation of Controllers, Models, and Views</li>
+        <li>Service classes for complex enrollment and progress business logic</li>
+        <li>Eloquent relationships: User → Enrollments → Courses → Modules</li>
+        <li>Laravel Policies for student/admin access control</li>
+        <li>API Resources &amp; Collections for consistent JSON API responses</li>
+        <li>Database migrations &amp; seeders for reproducible environments</li>
+        <li>Tailwind CSS for mobile-first, responsive design</li>
+        <li>Livewire components reduce full page reloads for a smoother UX</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>🎯 Real-World Relevance</h2>
+      <ul>
+        <li>Directly relates to my work at <strong>SciAstra</strong> building the production EdTech platform</li>
+        <li>Demonstrates understanding of real EdTech product requirements and user flows</li>
+        <li>Shows ability to build complex multi-role systems with clean database design</li>
+        <li>Proves competency with the full Laravel + Livewire + Tailwind stack</li>
+        <li>REST API layer shows readiness to work in decoupled frontend/backend architectures</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in">
+      <h2>💡 What I Learned / Demonstrated</h2>
+      <ul>
+        <li>Designing database schemas for complex many-to-many relationships (students ↔ courses)</li>
+        <li>Building interactive, real-time UIs with Livewire without full JS frameworks</li>
+        <li>Implementing progress-tracking systems with efficient MySQL queries</li>
+        <li>API design for consumption by mobile and frontend teams</li>
+        <li>User-centric design for EdTech — making complex features feel simple</li>
+        <li>Using AI tools effectively to prototype faster while maintaining code quality</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-card fade-in" style="text-align:center">
+      <h2>🔗 Links</h2>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+        <a href="https://github.com/puneettomar31" target="_blank" rel="noopener noreferrer" class="btn btn-code">💻 GitHub Repository</a>
+        <a href="index.html#projects" class="btn btn-demo">← All Projects</a>
+        <a href="index.html#contact" class="btn btn-ghost">✉️ Hire Me</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Puneet Tomar</div>
+      <p>&copy; 2026 Puneet Tomar · Full Stack PHP / Laravel Developer</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
