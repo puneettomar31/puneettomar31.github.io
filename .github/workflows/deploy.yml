@@ -1,0 +1,89 @@
+# -------------------------------------------------------
+# CI/CD Pipeline — Puneet Tomar Portfolio
+# -------------------------------------------------------
+# Trigger: Runs automatically on every push to main branch
+# Jobs:
+#   1. check  → Validates that all required files are present
+#   2. deploy → Deploys the site to GitHub Pages (only on main)
+# -------------------------------------------------------
+
+name: CI/CD — Deploy Portfolio
+
+on:
+  push:
+    branches: [main]       # Run on every push to main
+  pull_request:
+    branches: [main]       # Also run checks on pull requests (not deploy)
+
+# Permissions needed for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent multiple deployments running at the same time
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+
+  # ── Job 1: Quality Check ─────────────────────────────
+  # Runs on every push AND pull_request
+  # Makes sure all essential files exist before deploying
+  check:
+    name: Quality Check
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check HTML files are present
+        run: |
+          echo "---- Checking HTML files ----"
+          ls -la *.html
+          echo "Total HTML files: $(ls *.html | wc -l)"
+
+      - name: Check CSS and JS assets
+        run: |
+          echo "---- Checking core assets ----"
+          ls -la style.css script.js
+          echo "All required files are present ✓"
+
+      - name: Check blog pages
+        run: |
+          echo "---- Checking blog files ----"
+          for f in blog1.html blog2.html blog3.html blog4.html; do
+            if [ -f "$f" ]; then echo "$f ✓"; else echo "$f MISSING ✗"; exit 1; fi
+          done
+
+  # ── Job 2: Deploy ────────────────────────────────────
+  # 'needs: check' means this job ONLY runs if Job 1 passes
+  # 'if: github.ref == ...' means deploy ONLY on main branch (not PRs)
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: check
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload site as artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'          # Upload the entire repo root (all HTML/CSS/JS/images)
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
