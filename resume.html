@@ -6,56 +6,187 @@
 <title>Resume — Puneet Tomar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body{font-family:Arial,Helvetica,sans-serif;margin:24px;color:#222}
-  h1{margin:0;font-size:26px}
-  .sub{color:#555;margin-top:4px}
-  .row{display:flex;gap:24px;flex-wrap:wrap}
-  .col{flex:1 1 300px}
-  h2{font-size:16px;border-bottom:2px solid #222;padding-bottom:4px;margin:18px 0 8px}
-  ul{margin:8px 0 0 18px}
-  .muted{color:#666}
-  a{color:#0a58ca;text-decoration:none}
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 40px 20px; color: #1a1a1a; background: #f5f5f5; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  h1 { margin: 0; font-size: 28px; color: #007bff; }
+  .header-subtitle { color: #555; font-size: 14px; margin-top: 4px; }
+  .contact-info { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; font-size: 14px; color: #666; }
+  .contact-info a { color: #007bff; text-decoration: none; }
+  .contact-info a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 2px solid #e0e0e0; margin: 20px 0; }
+  h2 { font-size: 16px; color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 8px; margin: 20px 0 12px; }
+  h3 { font-size: 14px; font-weight: 600; margin: 12px 0 4px; color: #1a1a1a; }
+  ul { margin: 8px 0 0 20px; padding: 0; }
+  li { margin-bottom: 6px; }
+  .experience-item { margin-bottom: 16px; }
+  .job-title { font-weight: 600; }
+  .company { color: #555; }
+  .duration { color: #888; font-size: 13px; }
+  .tech-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .skill-category { margin-bottom: 12px; }
+  .skill-category strong { display: block; color: #007bff; margin-bottom: 4px; }
+  .project { margin-bottom: 16px; }
+  .project-name { font-weight: 600; color: #1a1a1a; }
+  .project-tech { font-size: 13px; color: #888; margin-top: 2px; }
+  .project-desc { margin-top: 6px; font-size: 14px; color: #555; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-  <h1>Puneet Tomar</h1>
-  <div class="sub">Full-Stack Developer (Laravel · Core PHP · WordPress)</div>
-  <div class="sub">📧 <a href="mailto:puneettmr31@gmail.com">puneettmr31@gmail.com</a>  |  📞 +91-9643948093</div>
-  <div class="sub">🔗 LinkedIn: <a href="https://www.linkedin.com/in/puneet-tomar-ab2a19193">linkedin.com/in/puneet-tomar-ab2a19193</a>  |  💻 GitHub: <a href="https://github.com/puneettomar31">github.com/puneettomar31</a></div>
-  <div class="sub">🌐 Portfolio Website: <a href="https://puneettomar31.github.io/">puneettomar31.github.io</a></div>
-
-  <div class="row">
-    <div class="col">
-      <h2>Skills</h2>
-      <ul>
-        <li>Laravel 11, PHP (Core PHP), JavaScript, MySQL</li>
-        <li>WordPress (themes & plugins), HTML5, CSS3, Bootstrap, jQuery, React (basic)</li>
-        <li>Linux & FTP, Git/GitHub, REST API, phpMyAdmin</li>
-      </ul>
-
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Laravel E-Commerce Backend</strong> — Role-based auth, CRUD modules, SEO fields, API integration</li>
-        <li><strong>Job Board Application</strong> — Full-featured Laravel portal with applications & roles</li>
-        <li><strong>Role-Based Portal</strong> — Secure admin-user system with sessions, auditing</li>
-        <li><strong>Frontend Mini Project</strong> — Responsive site with animations</li>
-      </ul>
+  <div class="container">
+    <h1>PUNEET TOMAR</h1>
+    <div class="header-subtitle">Laravel Developer | PHP Developer | REST API Developer</div>
+    <div class="header-subtitle">MySQL | React.js | 2+ Years Experience</div>
+    
+    <div class="contact-info">
+      <span>📞 +91-9643948093</span>
+      <span>📧 <a href="mailto:puneettmr31@gmail.com">puneettmr31@gmail.com</a></span>
+      <span>🔗 <a href="https://linkedin.com/in/puneet-tomar-ab2a19193">LinkedIn</a></span>
+      <span>💻 <a href="https://github.com/puneettomar31">GitHub</a></span>
+      <span>🌐 <a href="https://puneettomar31.github.io">Portfolio</a></span>
+      <span>📍 Delhi NCR (Notice Period: Immediate)</span>
     </div>
-    <div class="col">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Junior Laravel Developer</strong> — Eglogics Softech Pvt Ltd <span class="muted">(Feb 2025 – Present)</span><br>Live Laravel app development, DB design, API integration, bug fixes.</li>
-        <li><strong>Intern — PHP Laravel Developer</strong> — LETSWRITE <span class="muted">(Sep 2024 – Feb 2025)</span><br>CRUD modules, auth, DB optimization.</li>
-        <li><strong>Intern — WordPress Developer</strong> — Let The Trend <span class="muted">(Jul 2024 – Sep 2024)</span><br>Responsive websites, theme performance.</li>
-      </ul>
 
-      <h2>Education</h2>
-      <ul>
-        <li>MCA — Dr. A.P.J. Abdul Kalam Technical University <span class="muted">(2017–2019)</span></li>
-        <li>BCA — C.C.S University <span class="muted">(2014–2017)</span></li>
-      </ul>
+    <hr>
+
+    <h2>PROFESSIONAL SUMMARY</h2>
+    <p>Laravel Developer with 2+ years of experience building scalable web applications, REST APIs, authentication systems, admin dashboards, and business automation solutions. Skilled in Laravel, PHP, MySQL, React.js, API Integration, Query Optimization, and Performance Optimization. Experienced in delivering production-ready applications, collaborating with cross-functional teams, and independently handling complete feature development from design to deployment.</p>
+
+    <h2>KEY ACHIEVEMENTS</h2>
+    <ul>
+      <li>Developed and maintained 20+ production REST APIs</li>
+      <li>Improved API response time by up to 30% through query optimization</li>
+      <li>Built admin dashboards and business management systems supporting 5000+ active users</li>
+      <li>Delivered freelance Laravel projects independently from development to deployment</li>
+      <li>Integrated third-party APIs, authentication systems, and payment gateway solutions</li>
+    </ul>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <div class="tech-skills">
+      <div class="skill-category">
+        <strong>Backend</strong>
+        PHP, Laravel (10/11/12), Lumen, REST APIs, JWT Authentication, Laravel Sanctum
+      </div>
+      <div class="skill-category">
+        <strong>Frontend</strong>
+        React.js, JavaScript, HTML5, CSS3, SCSS, Bootstrap, Tailwind CSS, Blade
+      </div>
+      <div class="skill-category">
+        <strong>Libraries</strong>
+        Livewire, jQuery
+      </div>
+      <div class="skill-category">
+        <strong>Database</strong>
+        MySQL, Redis
+      </div>
+      <div class="skill-category">
+        <strong>Tools</strong>
+        Git, GitHub, Postman, Swagger (OpenAPI), Vite
+      </div>
+      <div class="skill-category">
+        <strong>Cloud & Deployment</strong>
+        AWS EC2, Docker, Linux, Nginx, Railway, Vercel
+      </div>
     </div>
+
+    <h2>PROFESSIONAL EXPERIENCE</h2>
+    
+    <div class="experience-item">
+      <div class="job-title">Freelance Laravel Developer</div>
+      <div class="duration">Mar 2026 – Present</div>
+      <ul>
+        <li>Developed and maintained Laravel-based business applications, admin dashboards, and REST APIs for client requirements</li>
+        <li>Fixed production issues, optimized database queries, and improved application performance</li>
+        <li>Integrated third-party APIs, payment gateways, and email services</li>
+        <li>Built custom admin panels and business management modules</li>
+        <li>Assisted clients with deployment and production troubleshooting</li>
+        <li>Enhanced frontend functionality using React.js</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Laravel, PHP, MySQL, REST APIs, React.js, Git</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title">Full Stack Developer — SciAstra</div>
+      <div class="duration">Jan 2026 – Mar 2026</div>
+      <ul>
+        <li>Developed and maintained backend systems for an EdTech platform serving 5000+ active users</li>
+        <li>Built and optimized 15+ REST APIs, improving response time by 30%</li>
+        <li>Designed dynamic admin dashboards using Filament and Livewire</li>
+        <li>Implemented role-based authentication and authorization</li>
+        <li>Optimized MySQL queries and database structures for better scalability</li>
+        <li>Delivered end-to-end features independently in an agile development environment</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Laravel, PHP, MySQL, REST APIs, Filament, Livewire, Git</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title">Junior Laravel Developer — Eglogics Softech Pvt. Ltd.</div>
+      <div class="duration">Feb 2025 – Jan 2026</div>
+      <ul>
+        <li>Developed scalable backend modules and APIs for business applications</li>
+        <li>Implemented authentication, middleware, and API security using JWT</li>
+        <li>Improved database performance through query optimization</li>
+        <li>Documented APIs using Swagger (OpenAPI) for seamless integration</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Laravel, PHP, MySQL, JWT, Swagger, REST APIs</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title">Laravel Developer Intern — LetsWrite</div>
+      <div class="duration">Sep 2024 – Feb 2025</div>
+      <ul>
+        <li>Built CRUD modules and backend features using Laravel</li>
+        <li>Implemented validation and authentication systems</li>
+        <li>Assisted in API development and testing using Postman</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> Laravel, PHP, MySQL, Postman</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="job-title">Web Developer Intern — Let The Trend</div>
+      <div class="duration">Jul 2024 – Sep 2024</div>
+      <ul>
+        <li>Developed responsive web pages using HTML, CSS, and Bootstrap</li>
+        <li>Converted UI/UX designs into functional web interfaces</li>
+      </ul>
+      <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript</p>
+    </div>
+
+    <h2>PROJECTS</h2>
+
+    <div class="project">
+      <div class="project-name">TalentHub Job Portal (Full Stack)</div>
+      <div class="project-tech">Laravel 12 | React 19 | TypeScript | MySQL | Redis</div>
+      <div class="project-desc">
+        <strong>Backend:</strong> Built scalable REST APIs using Laravel with clean architecture, implemented authentication using Laravel Sanctum, designed role-based access control for Admin/Employer/Candidate roles, integrated Redis caching, implemented queues for email notifications, developed secure file upload functionality, designed optimized relational database schema with 10+ tables.<br>
+        <strong>Frontend:</strong> Developed responsive UI using React.js, TypeScript, and Tailwind CSS, implemented API communication using React Query, managed authentication state using Zustand, built form validation using React Hook Form and Zod, configured Axios interceptors for token handling.<br>
+        <strong>Deployment:</strong> Backend on Railway, Frontend on Vercel. <a href="https://github.com/puneettomar31/talenthub" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">EdTech Course Management System</div>
+      <div class="project-desc">Built scalable backend architecture supporting multi-user access, developed REST APIs for course management and student enrollment, implemented authentication and role-based access control, designed system to efficiently handle concurrent users.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Laravel Filament Admin Dashboard</div>
+      <div class="project-desc">Developed secure admin panel with role-based access control, built CRUD modules and optimized database queries, integrated REST APIs for dynamic data handling.</div>
+    </div>
+
+    <h2>EDUCATION</h2>
+    <ul>
+      <li><strong>Master of Computer Applications (MCA)</strong> — Dr. A.P.J. Abdul Kalam Technical University</li>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong> — C.C.S University</li>
+    </ul>
+
+    <h2>CERTIFICATIONS</h2>
+    <ul>
+      <li>Full Stack Development — Vidhyashala</li>
+      <li>Web Designing & PHP Development — Aptron Solutions</li>
+    </ul>
   </div>
 </body>
 </html>
->>>>>>> 5a6ba5cb151bbb375eef1e0748a76276221fa54b
