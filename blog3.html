@@ -1,31 +1,70 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deploying Laravel on Linux/FTP | Puneet Tomar</title>
-    <link rel="stylesheet" href="../style.css" />
+  <title>Deploying Laravel on Linux | Puneet Tomar</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="blog-header">
-    <h1>Deploying Laravel on Linux/FTP</h1>
-    <p>Published on Dec 2024 | by Puneet Tomar</p>
-  </header>
-  <main class="blog-content">
-    <p>Deployment is an essential part of web development. I’ve deployed multiple Laravel projects on Linux servers using FTP and SSH workflows.</p>
-    <h3>Steps I Follow:</h3>
-    <ol>
-      <li>Set up <b>Linux hosting environment</b> (Apache/Nginx + PHP + MySQL)</li>
-      <li>Upload Laravel files via <b>FTP or Git</b></li>
-      <li>Configure <code>.env</code> with database and mail settings</li>
-      <li>Run <code>php artisan migrate --seed</code> for DB setup</li>
-      <li>Set correct folder permissions for <code>storage</code> and <code>bootstrap/cache</code></li>
-      <li>Configure <b>virtual hosts</b> or <code>.htaccess</code> for public folder</li>
-    </ol>
-    <p>Pro tip: Always test on a staging server before going live, and use version control for smooth updates.</p>
-  </main>
-  <footer><a href="index.html">← Back to Portfolio</a></footer>
+  <nav class="navbar">
+    <div class="logo">
+      <img class="logo-img" alt="PT" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%235b47fb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
+      Puneet Tomar
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.html" class="resume-btn" target="_blank">&#128196; Resume</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button class="menu-icon" id="menuBtn" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div style="max-width:860px;margin:40px auto;padding:0 20px 60px">
+    <div class="post fade-in">
+      <div class="blog-category">DevOps</div>
+      <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:8px;color:var(--text)">Deploying Laravel on Linux</h1>
+      <p class="meta">Published Dec 2024 &middot; by Puneet Tomar</p>
+      <img class="banner" src="./images/linux.png" alt="Deploying Laravel on Linux">
+
+      <p>Deployment is an essential part of web development. I have deployed multiple Laravel projects on Linux servers using FTP and SSH workflows during my time at <strong>Eglogics Softech</strong> and <strong>SciAstra</strong>.</p>
+
+      <h3 style="margin:18px 0 10px;font-size:1.1rem">Steps I Follow</h3>
+      <ol style="margin:0 0 16px 20px;line-height:1.9">
+        <li>Set up <strong>Linux hosting environment</strong> (Apache/Nginx + PHP + MySQL)</li>
+        <li>Upload Laravel files via <strong>FTP, Git pull, or rsync</strong></li>
+        <li>Configure <code>.env</code> with production database and mail settings</li>
+        <li>Run <code>composer install --no-dev --optimize-autoloader</code></li>
+        <li>Run <code>php artisan migrate --seed</code> for DB setup</li>
+        <li>Set correct folder permissions for <code>storage</code> and <code>bootstrap/cache</code></li>
+        <li>Configure <strong>virtual hosts</strong> or <code>.htaccess</code> rewrite rules for the public folder</li>
+        <li>Run <code>php artisan config:cache &amp;&amp; php artisan route:cache</code> for optimization</li>
+      </ol>
+
+      <h3 style="margin:18px 0 10px;font-size:1.1rem">Nginx vs Apache</h3>
+      <p>Nginx is generally faster for serving static assets and handles concurrent connections better. Apache with <code>mod_rewrite</code> works out of the box for Laravel's pretty URLs. For most shared hosting environments, Apache is more common.</p>
+
+      <p><strong>Pro tip:</strong> Always test on a staging server before going live, and use version control for smooth, trackable deployments. Never make direct edits to production files.</p>
+
+      <div class="blog-nav">
+        <a href="blog2.html">&larr; Previous: Optimizing Laravel for Speed</a>
+        <a href="blog4.html">Next: Core PHP Basics &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Puneet Tomar</div>
+      <p>&copy; 2026 Puneet Tomar &middot; Full Stack PHP / Laravel Developer</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
->>>>>>> 5a6ba5cb151bbb375eef1e0748a76276221fa54b
