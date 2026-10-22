@@ -34,12 +34,11 @@ document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => a
 
 // Typewriter effect
 const typedLines = [
-  'Full Stack PHP Developer',
-  'Laravel 12 Expert',
-  'REST API Engineer',
-  'Filament & Livewire Builder',
-  'EdTech Platform Developer',
-  'AI-Assisted Coder'
+  'Full-Stack Developer',
+  'PHP & Laravel Developer',
+  'React.js Developer',
+  'REST API Developer',
+  'AI-Assisted Developer'
 ];
 let lineIndex = 0, charIndex = 0, isDeleting = false;
 const typedEl = document.getElementById('typedText');
@@ -65,7 +64,7 @@ function animateCounter(el, target, suffix) {
   const step = Math.ceil(target / 40);
   const timer = setInterval(() => {
     count = Math.min(count + step, target);
-    el.textContent = count + (suffix || '+');
+    el.textContent = count + suffix;
     if (count >= target) clearInterval(timer);
   }, 40);
 }
@@ -74,7 +73,7 @@ const counterObserver = new IntersectionObserver((entries) => {
     if (e.isIntersecting) {
       const el = e.target;
       const target = parseInt(el.dataset.target, 10);
-      animateCounter(el, target, '+');
+      animateCounter(el, target, el.dataset.suffix || '');
       counterObserver.unobserve(el);
     }
   });
@@ -98,4 +97,3 @@ window.addEventListener('scroll', () => {
     }
   });
 }, { passive: true });
-
