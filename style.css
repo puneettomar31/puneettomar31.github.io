@@ -201,6 +201,9 @@ button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 .cover-caption { max-width: 82%; font-size: .73rem; line-height: 1.5; opacity: .76; }
 .cover-mark { position: absolute; right: 27px; bottom: 22px; color: rgba(255,255,255,.14); font-size: 3.8rem; line-height: 1; font-weight: 800; letter-spacing: -.08em; }
 .cover-talenthub { background: radial-gradient(ellipse at 92% 12%, rgba(0,210,255,.52), transparent 40%), linear-gradient(135deg,#24235f,#3631a3 68%,#1472a5); }
+.cover-lumenai { background: radial-gradient(ellipse at 92% 10%, rgba(94,217,255,.48), transparent 42%), linear-gradient(135deg,#101e36,#193d5b 65%,#31538a); }
+.cover-lumenai .cover-title span { color: #8ae8ff; }
+.cover-lumenai .cover-caption b { padding: 0 3px; color: #8ae8ff; }
 .cover-admin { background: radial-gradient(ellipse at 90% 8%, rgba(114,132,255,.47), transparent 42%), linear-gradient(135deg,#172039,#26365d); }
 .cover-edtech { background: radial-gradient(ellipse at 90% 12%, rgba(255,193,112,.48), transparent 42%), linear-gradient(135deg,#853d65,#533c83 68%,#343c82); }
 .cover-edtech .cover-title span { color: #ffd89b; }
@@ -220,6 +223,11 @@ button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 .project-links { display: flex; gap: 10px; flex-wrap: wrap; }
 .project-links .btn { font-size: 0.81rem; padding: 8px 16px; border-radius: 10px; }
 .project-links .btn:focus-visible, .project-card h3 a:focus-visible { outline-color: var(--brand); }
+.project-availability { margin: 10px 0 0 !important; color: #858b9b !important; font-size: .74rem !important; line-height: 1.5 !important; }
+.project-metric { display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 10px; margin: 0 0 16px; padding: 12px 14px; border: 1px solid var(--border); border-left: 3px solid var(--brand); border-radius: 10px; background: var(--muted-bg); }
+.project-metric strong { color: var(--brand); font-size: 1.12rem; font-weight: 800; }
+.project-metric span { color: #777; font-size: .75rem; line-height: 1.45; }
+.dark-mode .project-metric span { color: #aab; }
 .btn-code { background: var(--gradient); color: #fff; }
 .btn-demo { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
 .btn-demo:hover { background: var(--gradient); color: #fff; border-color: transparent; }
