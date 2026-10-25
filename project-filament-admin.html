@@ -6,12 +6,12 @@
   <title>Laravel Filament Admin Dashboard | Puneet Tomar</title>
   <meta name="description" content="Overview of Puneet Tomar's Laravel Filament Admin Dashboard portfolio project." />
   <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="logo">
-      <img class="logo-img" alt="PT Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%235b47fb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
+      <img class="logo-img" alt="" aria-hidden="true" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect rx='14' width='64' height='64' fill='%23176b56'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' fill='white' font-family='Arial' font-weight='bold'%3EPT%3C/text%3E%3C/svg%3E">
       Puneet Tomar
     </div>
     <ul class="nav-links" id="navLinks">
@@ -24,8 +24,8 @@
       <li><a href="./assets/Puneet(2026)_Tomar_Resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume PDF</a></li>
     </ul>
     <div class="nav-ctas">
-      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
-      <button class="menu-icon" id="menuBtn" aria-label="Open menu">☰</button>
+      <button class="dark-toggle" id="darkToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
+      <button class="menu-icon" id="menuBtn" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
     </div>
   </nav>
 

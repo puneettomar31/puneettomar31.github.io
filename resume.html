@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Resume of Puneet Tomar, a full-stack developer with 2+ years of experience in PHP, Laravel, React.js, REST APIs, and MySQL.">
   <title>Puneet Tomar | Full-Stack Developer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; padding: 32px 16px; color: #202431; background: #f3f5fa; font: 15px/1.55 Arial, sans-serif; }
-    .resume { max-width: 850px; margin: 0 auto; padding: 40px 48px; background: #fff; box-shadow: 0 8px 32px rgba(32, 36, 49, .1); }
-    h1 { margin: 0; color: #4636c8; font-size: 32px; letter-spacing: .04em; }
+    body { margin: 0; padding: 32px 16px; color: #18231f; background: #f7f8f5; font: 15px/1.55 'DM Sans', sans-serif; }
+    .resume { max-width: 850px; margin: 0 auto; padding: 40px 48px; background: #fff; border: 1px solid #dfe6df; border-radius: 18px; box-shadow: 0 8px 28px rgba(26, 48, 39, .08); }
+    h1 { margin: 0; color: #176b56; font: 800 32px/1.2 'Manrope', sans-serif; letter-spacing: .04em; }
     .headline { margin-top: 6px; color: #454b5b; font-size: 17px; font-weight: 600; }
     .contact { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 14px; font-size: 13px; }
-    a { color: #4636c8; text-decoration: none; }
+    a { color: #176b56; text-decoration: none; }
     .summary { margin: 20px 0 0; }
-    h2 { margin: 24px 0 10px; padding-bottom: 5px; border-bottom: 2px solid #4636c8; color: #4636c8; font-size: 16px; letter-spacing: .04em; }
+    h2 { margin: 24px 0 10px; padding-bottom: 5px; border-bottom: 2px solid #176b56; color: #176b56; font: 700 16px/1.4 'Manrope', sans-serif; letter-spacing: .04em; }
     p { margin: 6px 0; }
     .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; }
     .skills p { margin: 0; }
@@ -25,13 +28,17 @@
     ul { margin: 6px 0 0; padding-left: 20px; }
     li { margin: 3px 0; }
     .actions { margin: 20px auto; text-align: center; }
-    .actions button, .actions a { display: inline-block; margin: 0 5px; padding: 9px 15px; border: 0; border-radius: 6px; background: #4636c8; color: #fff; cursor: pointer; font: inherit; }
-    .actions a { background: #626a7a; }
+    .actions button, .actions a { display: inline-block; margin: 0 5px; padding: 9px 15px; border: 0; border-radius: 8px; background: #176b56; color: #fff; cursor: pointer; font: inherit; }
+    .actions a { background: #45534c; }
     @media (max-width: 600px) {
       body { padding: 12px 8px; }
-      .resume { padding: 24px 20px; }
+      .resume { padding: 24px 18px; }
       .skills { grid-template-columns: 1fr; }
       .role { flex-direction: column; gap: 2px; }
+    }
+    @media (max-width: 380px) {
+      .resume { padding: 20px 14px; }
+      .contact { gap: 6px 12px; }
     }
     @media print {
       @page { size: A4; margin: 14mm; }
@@ -127,7 +134,7 @@
       <h2>SELECTED PROJECTS</h2>
       <article class="project">
         <div class="role"><span>TalentHub Job Portal</span><span class="date">In progress</span></div>
-        <p>Full-stack project using Laravel and React. See the <a href="https://github.com/puneettomar31/talenthub">GitHub repository</a> for the current implementation.</p>
+        <p>Full-stack job portal in progress using Laravel and React. Its source repository and demo are not publicly available; <a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project%20walkthrough">contact me for a walkthrough</a>.</p>
       </article>
       <article class="project">
         <div class="role"><span>EdTech Course Management System</span></div>
