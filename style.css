@@ -436,3 +436,98 @@ footer p { font-size: 0.84rem; opacity: 0.6; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   .js .fade-in, .js .slide-left, .js .slide-right { opacity: 1; transform: none; }
 }
+
+/* Portfolio visual refresh */
+.portfolio-page .navbar {
+  padding-block: 10px;
+  background: rgba(13, 22, 18, 0.94);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.portfolio-page .logo { color: #a9dcae; }
+.portfolio-page .nav-links a { color: #e3ece5; }
+.portfolio-page .nav-links a:hover { color: #c5ef92; }
+.portfolio-page .nav-links .resume-btn { color: #142019 !important; }
+.portfolio-page .menu-icon,
+.portfolio-page .dark-toggle { color: #e3ece5; border-color: rgba(255, 255, 255, 0.2); }
+.portfolio-page .hero {
+  min-height: min(790px, calc(100svh - 60px));
+  background-color: #0d1712;
+  background-image:
+    radial-gradient(ellipse at 68% 18%, rgba(123, 184, 108, 0.2), transparent 38%),
+    linear-gradient(rgba(220, 244, 225, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 244, 225, 0.045) 1px, transparent 1px),
+    linear-gradient(135deg, #0d1712 0%, #14251c 58%, #102018 100%);
+  background-size: auto, 72px 72px, 72px 72px, auto;
+  border-bottom: 1px solid rgba(225, 241, 228, 0.12);
+  padding-block: clamp(82px, 10vw, 132px);
+}
+.portfolio-page .hero-bg-orb { opacity: 0.1; }
+.portfolio-page .hero-layout {
+  width: min(1200px, 100%);
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.75fr);
+  gap: clamp(44px, 7vw, 104px);
+}
+.portfolio-page .hero-content { max-width: 720px; }
+.portfolio-page .hero h1 {
+  max-width: 760px;
+  font-size: clamp(3rem, 5.6vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.065em;
+}
+.portfolio-page .hero-highlight { color: #c5ef92; }
+.portfolio-page .hero-badge { border-radius: 8px; }
+.portfolio-page .hero-btns .btn { border-radius: 8px; }
+.portfolio-page .hero-card {
+  border-radius: 14px;
+  border-color: rgba(205, 235, 210, 0.2);
+  background: rgba(10, 21, 15, 0.88);
+  transform: none;
+}
+.portfolio-page .section { max-width: 1240px; }
+.portfolio-page .section-header { align-items: flex-start; text-align: left; margin-bottom: 42px; }
+.portfolio-page .section-divider { margin-left: 0; }
+.portfolio-page .section-tag { letter-spacing: 0.16em; }
+.portfolio-page .section-alt { background: var(--muted-bg); }
+.portfolio-page .stats-bar { border-block-color: var(--border); }
+.portfolio-page .stat-item { padding-block: 28px; }
+.portfolio-page .stat-number { font-size: clamp(2.1rem, 3vw, 2.7rem); }
+.portfolio-page .project-card,
+.portfolio-page .blog-card,
+.portfolio-page .skill-card,
+.portfolio-page .timeline-card,
+.portfolio-page .edu-card,
+.portfolio-page .contact-link-item,
+.portfolio-page .contact-form-card {
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(14, 35, 24, 0.07);
+}
+.portfolio-page .project-card:hover,
+.portfolio-page .blog-card:hover,
+.portfolio-page .skill-card:hover,
+.portfolio-page .edu-card:hover { border-color: var(--brand); }
+.portfolio-page .project-cover { min-height: 210px; }
+.portfolio-page .about-avatar { border-radius: 14px; }
+.portfolio-page footer { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+@media (max-width: 900px) {
+  .portfolio-page .hero { min-height: auto; }
+  .portfolio-page .hero-layout { gap: 36px; }
+  .portfolio-page .hero h1 { font-size: clamp(2.8rem, 7vw, 4.3rem); }
+}
+
+@media (max-width: 768px) {
+  .portfolio-page .hero-layout { grid-template-columns: minmax(0, 1fr); }
+  .portfolio-page .section-header { align-items: center; text-align: center; }
+  .portfolio-page .section-divider { margin-inline: auto; }
+  .portfolio-page .about-detail-item { align-items: flex-start; text-align: left; }
+  .portfolio-page .about-detail-item .icon { flex: 0 0 22px; }
+  .portfolio-page .about-detail-item > div { flex: 1; min-width: 0; text-align: left; }
+  .portfolio-page .hero { background-size: auto, 56px 56px, 56px 56px, auto; }
+  .portfolio-page .hero h1 { font-size: clamp(2.7rem, 10vw, 4rem); }
+}
+
+@media (max-width: 480px) {
+  .portfolio-page .hero { padding-block: 64px 52px; }
+  .portfolio-page .hero h1 { font-size: clamp(2.5rem, 11vw, 3.2rem); }
+  .portfolio-page .project-cover { min-height: 190px; }
+}
