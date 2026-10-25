@@ -1,12 +1,30 @@
 
+document.documentElement.classList.add('js');
+
 // Mobile menu
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
 if (menuBtn && navLinks) {
-  menuBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
+  const closeMenu = () => {
+    navLinks.classList.remove('show');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.setAttribute('aria-label', 'Open menu');
+  };
+  menuBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('show');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  });
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('click', (e) => {
     if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
-      navLinks.classList.remove('show');
+      closeMenu();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('show')) {
+      closeMenu();
+      menuBtn.focus();
     }
   });
 }
@@ -15,7 +33,10 @@ if (menuBtn && navLinks) {
 const darkToggle = document.getElementById('darkToggle');
 if (localStorage.getItem('dark-mode') === 'on') {
   document.body.classList.add('dark-mode');
-  if (darkToggle) darkToggle.textContent = '☀️';
+  if (darkToggle) {
+    darkToggle.textContent = '☀️';
+    darkToggle.setAttribute('aria-pressed', 'true');
+  }
 }
 if (darkToggle) {
   darkToggle.addEventListener('click', () => {
@@ -23,6 +44,7 @@ if (darkToggle) {
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('dark-mode', isDark ? 'on' : 'off');
     darkToggle.textContent = isDark ? '☀️' : '🌙';
+    darkToggle.setAttribute('aria-pressed', String(isDark));
   });
 }
 
@@ -32,34 +54,13 @@ const animObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => animObserver.observe(el));
 
-// Typewriter effect
-const typedLines = [
-  'Full-Stack Developer',
-  'PHP & Laravel Developer',
-  'React.js Developer',
-  'REST API Developer',
-  'AI-Assisted Developer'
-];
-let lineIndex = 0, charIndex = 0, isDeleting = false;
-const typedEl = document.getElementById('typedText');
-function typeWriter() {
-  if (!typedEl) return;
-  const current = typedLines[lineIndex];
-  if (!isDeleting) {
-    typedEl.textContent = current.slice(0, charIndex + 1);
-    charIndex++;
-    if (charIndex === current.length) { isDeleting = true; setTimeout(typeWriter, 1800); return; }
-  } else {
-    typedEl.textContent = current.slice(0, charIndex - 1);
-    charIndex--;
-    if (charIndex === 0) { isDeleting = false; lineIndex = (lineIndex + 1) % typedLines.length; }
-  }
-  setTimeout(typeWriter, isDeleting ? 60 : 80);
-}
-typeWriter();
-
 // Counter animation for stats
 function animateCounter(el, target, suffix) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    el.textContent = target + suffix;
+    return;
+  }
+
   let count = 0;
   const step = Math.ceil(target / 40);
   const timer = setInterval(() => {
