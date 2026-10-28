@@ -6,7 +6,7 @@ Static, responsive developer portfolio built with HTML, CSS, and JavaScript.
 
 - `index.html` — portfolio, skills, selected projects, experience, education, and contact details.
 - `resume.html` — printable resume summary.
-- `assets/Puneet(2026)_Tomar_Resume.pdf` — current resume PDF linked from the portfolio.
+- `assets/Puneet_Tomar_Resume.pdf` — current downloadable resume PDF linked from every portfolio page.
 - `project-edtech.html` and `project-filament-admin.html` — selected project overviews.
 - `blog1.html` through `blog4.html` — development articles.
 

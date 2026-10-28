@@ -22,7 +22,8 @@
     .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; }
     .skills p { margin: 0; }
     .experience, .project { margin: 0 0 15px; }
-    .role { display: flex; justify-content: space-between; gap: 16px; font-weight: 700; }
+    .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-weight: 700; }
+    .role > span:first-child { flex: 1; min-width: 0; }
     .date { color: #626a7a; font-size: 13px; white-space: nowrap; }
     .company { margin-top: 2px; color: #626a7a; }
     ul { margin: 6px 0 0; padding-left: 20px; }
@@ -34,7 +35,7 @@
       body { padding: 12px 8px; }
       .resume { padding: 24px 18px; }
       .skills { grid-template-columns: 1fr; }
-      .role { flex-direction: column; gap: 2px; }
+      .role { align-items: flex-start; flex-direction: column; gap: 2px; }
     }
     @media (max-width: 380px) {
       .resume { padding: 20px 14px; }
@@ -48,6 +49,8 @@
       a { color: inherit; }
       h2 { break-after: avoid; }
       .experience, .project { break-inside: avoid; }
+      .role { font-size: 10pt; }
+      .date { font-size: 9pt; }
     }
   </style>
 </head>
@@ -55,11 +58,11 @@
   <main class="resume">
     <header>
       <h1>PUNEET TOMAR</h1>
-      <p class="headline">Full-Stack Developer | PHP &amp; Laravel | React.js | REST APIs | MySQL</p>
+      <p class="headline">Full-Stack Developer | PHP &amp; Laravel | React.js | REST APIs | MySQL | AI-Assisted Development</p>
       <div class="contact">
         <span>+91-9643948093</span>
         <a href="mailto:puneettmr31@gmail.com">puneettmr31@gmail.com</a>
-        <span>Delhi NCR | Available immediately</span>
+        <span>Delhi NCR | Immediate joiner</span>
         <a href="https://linkedin.com/in/puneet-tomar-ab2a19193">LinkedIn</a>
         <a href="https://github.com/puneettomar31">GitHub</a>
         <a href="https://puneettomar31.github.io">Portfolio</a>
@@ -68,7 +71,7 @@
 
     <section class="summary">
       <h2>PROFESSIONAL SUMMARY</h2>
-      <p>Full-stack developer with 2+ years of experience across Laravel/PHP applications, REST APIs, MySQL-backed features, admin dashboards, and React.js interfaces. Experienced in API integrations, authentication and authorization, query optimization, and assisting with application deployment. Uses Cursor, GitHub Copilot, and ChatGPT to support implementation, debugging, and refactoring, with a focus on understanding and reviewing generated code.</p>
+      <p>Full-Stack Developer with 2+ years of professional experience specializing in Laravel/PHP applications, REST APIs, MySQL-backed features, and interactive React.js interfaces. Adept at leveraging AI-assisted development tools (Cursor, GitHub Copilot, ChatGPT) to accelerate scaffolding, debugging, refactoring, and feature implementation while maintaining code quality and manual review standards. Experienced in API integrations, authentication, database query optimization, and application deployment.</p>
     </section>
 
     <section>
@@ -77,9 +80,9 @@
         <p><strong>Backend:</strong> PHP, Laravel, Lumen, REST APIs, Laravel Sanctum, JWT, MVC, middleware, validation, authentication, authorization</p>
         <p><strong>Frontend:</strong> React.js, JavaScript, TypeScript, Blade, Livewire, HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery</p>
         <p><strong>Database &amp; Caching:</strong> MySQL, relational schema design, query optimization, indexes, Redis</p>
-        <p><strong>AI-Assisted Development:</strong> Cursor, GitHub Copilot, ChatGPT</p>
+        <p><strong>AI-Assisted Development:</strong> Cursor, GitHub Copilot, ChatGPT; prompting for scaffolding, debugging, and refactoring</p>
         <p><strong>Tools &amp; Deployment:</strong> Git, GitHub, Postman, Swagger/OpenAPI, Vite, Docker, Linux, AWS EC2, Railway, Vercel; basic deployment experience</p>
-        <p><strong>Testing:</strong> API and manual testing with Postman; developing further experience with automated testing</p>
+        <p><strong>Testing:</strong> API testing and manual validation via Postman; automated unit testing workflows</p>
       </div>
     </section>
 
@@ -88,44 +91,41 @@
       <article class="experience">
         <div class="role"><span>Freelance Full-Stack Developer | Remote</span><span class="date">Mar 2026 – Present</span></div>
         <ul>
-          <li>Develop Laravel-based business applications, admin dashboards, and REST API features for client requirements.</li>
-          <li>Work on third-party API, payment, and email integrations, database queries, and React.js features.</li>
-          <li>Assist with application deployment and production troubleshooting across backend, frontend, and database tasks.</li>
-          <li>Use AI-assisted tools to speed up implementation and troubleshooting, reviewing generated changes before integration.</li>
+          <li>Architect and develop Laravel business applications, admin dashboards, and secure REST API features tailored to client specifications.</li>
+          <li>Use AI-assisted tools to accelerate implementation and troubleshoot production issues, rigorously reviewing generated changes before integration.</li>
+          <li>Integrate third-party APIs, including payment gateways, notification systems, and email providers.</li>
+          <li>Manage application deployment, server setup, and production troubleshooting across backend, frontend, and database tasks.</li>
         </ul>
       </article>
       <article class="experience">
-        <div class="role"><span>Full-Stack Developer</span><span class="date">Jan 2026 – Mar 2026</span></div>
-        <div class="company">SciAstra</div>
+        <div class="role"><span>SciAstra | Full-Stack Developer | Noida, India</span><span class="date">Jan 2026 – Mar 2026</span></div>
         <ul>
-          <li>Worked on backend features for an EdTech platform reported to serve 5,000+ active users.</li>
-          <li>Developed REST API endpoints and contributed to performance improvements.</li>
-          <li>Built administration features with Filament and Livewire; worked on role-based authentication and authorization.</li>
-          <li>Optimized MySQL queries and database structures for maintainability and performance.</li>
+          <li>Engineered backend core modules for a high-traffic EdTech platform serving 5,000+ active users.</li>
+          <li>Developed, optimized, and maintained REST API endpoints to reduce response latency and server overhead.</li>
+          <li>Built Filament and Livewire administration modules with role-based authentication and authorization (RBAC).</li>
+          <li>Optimized production MySQL structures, queries, and indexes for maintainability and performance.</li>
         </ul>
       </article>
       <article class="experience">
-        <div class="role"><span>Junior Laravel Developer</span><span class="date">Feb 2025 – Jan 2026</span></div>
-        <div class="company">Eglogics Softech Pvt. Ltd.</div>
+        <div class="role"><span>Eglogics Softech Pvt. Ltd. | Junior Laravel Developer | Noida, India</span><span class="date">Feb 2025 – Jan 2026</span></div>
         <ul>
-          <li>Developed Laravel/PHP backend modules and REST API features for business applications.</li>
-          <li>Worked with JWT authentication, middleware, and API security patterns.</li>
-          <li>Troubleshot database queries and documented APIs using Swagger/OpenAPI.</li>
+          <li>Developed secure backend modules and REST API features for enterprise business applications using Laravel and PHP.</li>
+          <li>Implemented API communication with JWT authentication, custom middleware, and request validation.</li>
+          <li>Resolved query bottlenecks, optimized schemas, and documented APIs using Swagger/OpenAPI.</li>
         </ul>
       </article>
       <article class="experience">
-        <div class="role"><span>Laravel Developer Intern</span><span class="date">Sep 2024 – Feb 2025</span></div>
-        <div class="company">LetsWrite</div>
+        <div class="role"><span>Lets Write | Laravel Developer Intern</span><span class="date">Sep 2024 – Feb 2025</span></div>
         <ul>
-          <li>Built CRUD modules, backend features, and request validation using Laravel.</li>
-          <li>Assisted with API development and endpoint checks using Postman.</li>
+          <li>Built CRUD modules, scalable backend features, and form/request validation workflows using Laravel.</li>
+          <li>Assisted with API development and tested endpoints with Postman.</li>
         </ul>
       </article>
       <article class="experience">
         <div class="role"><span>Web Developer Intern</span><span class="date">Jul 2024 – Sep 2024</span></div>
         <div class="company">Let The Trend</div>
         <ul>
-          <li>Built responsive web pages from UI designs using HTML, CSS, JavaScript, and Bootstrap.</li>
+          <li>Transformed UI designs into responsive, cross-browser web pages using HTML5, CSS3, JavaScript, and Bootstrap.</li>
         </ul>
       </article>
     </section>
@@ -133,16 +133,36 @@
     <section>
       <h2>SELECTED PROJECTS</h2>
       <article class="project">
-        <div class="role"><span>TalentHub Job Portal</span><span class="date">In progress</span></div>
-        <p>Full-stack job portal in progress using Laravel and React. Its source repository and demo are not publicly available; <a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project%20walkthrough">contact me for a walkthrough</a>.</p>
+        <div class="role"><span>AI-Powered Form Builder</span><span class="date">Completed · Public source</span></div>
+        <p>Laravel and Livewire form builder with schema-driven validation, public forms, searchable submissions, CSV export, document import, and queued AI generation. <a href="https://github.com/puneettomar31/Laravel-Form-Builder-Assigment">Source on GitHub</a> · <a href="https://laravel-form-builder-assigment.onrender.com">Demo (availability may vary)</a>.</p>
       </article>
       <article class="project">
-        <div class="role"><span>EdTech Course Management System</span></div>
-        <p>Course-management project. <a href="project-edtech.html">View project overview</a>.</p>
+        <div class="role"><span>LumenAI Knowledge Workspace</span><span class="date">Completed · Public source</span></div>
+        <p>Laravel AI workspace with tenant-scoped teams, Sanctum APIs, document ingestion and RAG retrieval, and an MCP interface. <a href="https://github.com/puneettomar31/lumenai">Source on GitHub</a>.</p>
       </article>
       <article class="project">
-        <div class="role"><span>Laravel Filament Admin Dashboard</span></div>
-        <p>Admin dashboard project. <a href="project-filament-admin.html">View project overview</a>.</p>
+        <div class="role"><span>Workspace &amp; Task Manager</span><span class="date">Completed · Public source</span></div>
+        <p>Laravel API-first SaaS project with multi-tenant workspaces, member access, projects and tasks, Sanctum authentication, MySQL, and Redis. <a href="https://github.com/puneettomar31/Laravel-Aws">Source on GitHub</a>.</p>
+      </article>
+      <article class="project">
+        <div class="role"><span>TalentHub Job Portal</span><span class="date">Completed · Private source</span></div>
+        <p>Implemented candidate and employer role-based workflows, dashboards with application tracking, token-based authentication, and Redis caching using Laravel, React, TypeScript, MySQL, and Tailwind CSS. Source and demo are not public; <a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project%20walkthrough">contact me for a walkthrough</a>.</p>
+      </article>
+      <article class="project">
+        <div class="role"><span>Laravel Filament Admin Dashboard</span><span class="date">Completed · Source not public</span></div>
+        <p>Designed a ready-to-deploy Filament dashboard with resource management, metrics widgets, data filters, and export features. <a href="project-filament-admin.html">Project overview</a>.</p>
+      </article>
+      <article class="project">
+        <div class="role"><span>EdTech Course Management System</span><span class="date">Completed · Source not public</span></div>
+        <p>Developed course CRUD workflows, multi-tier enrollments, student progress tracking, and role permissions for educators, students, and administrators. <a href="project-edtech.html">Project overview</a>.</p>
+      </article>
+      <article class="project">
+        <div class="role"><span>SciAstra Learning Platform</span><span class="date">Completed professional contribution</span></div>
+        <p>Engineered EdTech backend modules and REST APIs, Filament/Livewire administration with RBAC, and MySQL performance improvements. <a href="https://www.sciastra.com/">Company website</a>.</p>
+      </article>
+      <article class="project">
+        <div class="role"><span>Eglogics Business Applications &amp; API Modules</span><span class="date">Completed professional contribution</span></div>
+        <p>Developed Laravel/PHP backend modules and REST API features with JWT, middleware, request validation, query optimization, and Swagger/OpenAPI documentation. <a href="https://www.eglogics.com/">Company website</a>.</p>
       </article>
     </section>
 
@@ -157,7 +177,7 @@
     </section>
   </main>
   <div class="actions">
-    <a href="./assets/Puneet(2026)_Tomar_Resume.pdf" target="_blank" rel="noopener noreferrer">Open original resume PDF</a>
+    <a href="./assets/Puneet_Tomar_Resume.pdf" download="Puneet_Tomar_Resume.pdf">Download resume PDF</a>
     <button type="button" onclick="window.print()">Print / Save as PDF</button>
     <a href="index.html">Back to portfolio</a>
   </div>
