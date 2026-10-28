@@ -11,7 +11,7 @@
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; padding: 32px 16px; color: #18231f; background: #f7f8f5; font: 15px/1.55 'DM Sans', sans-serif; }
-    .resume { max-width: 850px; margin: 0 auto; padding: 40px 48px; background: #fff; border: 1px solid #dfe6df; border-radius: 18px; box-shadow: 0 8px 28px rgba(26, 48, 39, .08); }
+    .resume { max-width: 850px; margin: 0 auto; padding: 40px 48px; background: #fff; border-radius: 18px; box-shadow: 0 8px 28px rgba(26, 48, 39, .08); }
     h1 { margin: 0; color: #176b56; font: 800 32px/1.2 'Manrope', sans-serif; letter-spacing: .04em; }
     .headline { margin-top: 6px; color: #454b5b; font-size: 17px; font-weight: 600; }
     .contact { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 14px; font-size: 13px; }
@@ -44,7 +44,7 @@
     @media print {
       @page { size: A4; margin: 14mm; }
       body { padding: 0; background: #fff; font-size: 11pt; }
-      .resume { max-width: none; padding: 0; box-shadow: none; }
+      .resume { max-width: none; padding: 0; border-radius: 0; box-shadow: none; }
       .actions { display: none; }
       a { color: inherit; }
       h2 { break-after: avoid; }
