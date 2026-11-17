@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Resume of Puneet Tomar, a full-stack developer with 2+ years of experience in PHP, Laravel, React.js, REST APIs, and MySQL.">
-  <title>Puneet Tomar | Full-Stack Developer Resume</title>
+  <meta name="description" content="Resume of Puneet Tomar, a PHP and Laravel developer with 1.5+ years of professional experience in backend development, REST APIs, MySQL, and React.js.">
+  <title>Puneet Tomar | PHP / Laravel Developer Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,15 +42,21 @@
       .contact { gap: 6px 12px; }
     }
     @media print {
-      @page { size: A4; margin: 14mm; }
-      body { padding: 0; background: #fff; font-size: 11pt; }
+      @page { size: A4; margin: 10mm; }
+      body { padding: 0; background: #fff; font-size: 9pt; line-height: 1.3; }
       .resume { max-width: none; padding: 0; border-radius: 0; box-shadow: none; }
       .actions { display: none; }
       a { color: inherit; }
-      h2 { break-after: avoid; }
-      .experience, .project { break-inside: avoid; }
-      .role { font-size: 10pt; }
-      .date { font-size: 9pt; }
+      .summary { margin-top: 12px; }
+      h1 { font-size: 25pt; }
+      h2 { margin: 12px 0 6px; padding-bottom: 3px; font-size: 12pt; break-after: avoid; }
+      p { margin: 3px 0; }
+      .skills { gap: 4px 16px; }
+      .experience, .project { margin-bottom: 8px; break-inside: avoid; }
+      ul { margin-top: 3px; }
+      li { margin: 1px 0; }
+      .role { font-size: 9pt; }
+      .date { font-size: 8pt; }
     }
   </style>
 </head>
@@ -58,7 +64,7 @@
   <main class="resume">
     <header>
       <h1>PUNEET TOMAR</h1>
-      <p class="headline">Full-Stack Developer | PHP &amp; Laravel | React.js | REST APIs | MySQL | AI-Assisted Development</p>
+      <p class="headline">PHP / Laravel Developer | Full-Stack Web Developer | REST APIs &amp; MySQL | AI-Assisted Development</p>
       <div class="contact">
         <span>+91-9643948093</span>
         <a href="mailto:puneettmr31@gmail.com">puneettmr31@gmail.com</a>
@@ -71,7 +77,7 @@
 
     <section class="summary">
       <h2>PROFESSIONAL SUMMARY</h2>
-      <p>Full-Stack Developer with 2+ years of professional experience specializing in Laravel/PHP applications, REST APIs, MySQL-backed features, and interactive React.js interfaces. Adept at leveraging AI-assisted development tools (Cursor, GitHub Copilot, ChatGPT) to accelerate scaffolding, debugging, refactoring, and feature implementation while maintaining code quality and manual review standards. Experienced in API integrations, authentication, database query optimization, and application deployment.</p>
+      <p>PHP / Laravel Developer with 1.5+ years of professional experience building scalable backend modules, RESTful APIs, Filament/Livewire admin dashboards, and database-driven web applications. Skilled in PHP, Laravel, MySQL query optimization, API security (Sanctum, JWT), and React.js. Experienced in integrating AI APIs, basic RAG and MCP concepts, and leveraging AI-assisted development tools (Cursor, GitHub Copilot, ChatGPT) to deliver clean, maintainable production code.</p>
     </section>
 
     <section>
@@ -80,30 +86,26 @@
         <p><strong>Backend:</strong> PHP, Laravel, Lumen, REST APIs, Laravel Sanctum, JWT, MVC, middleware, validation, authentication, authorization</p>
         <p><strong>Frontend:</strong> React.js, JavaScript, TypeScript, Blade, Livewire, HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery</p>
         <p><strong>Database &amp; Caching:</strong> MySQL, relational schema design, query optimization, indexes, Redis</p>
-        <p><strong>AI-Assisted Development:</strong> Cursor, GitHub Copilot, ChatGPT; prompting for scaffolding, debugging, and refactoring</p>
-        <p><strong>Tools &amp; Deployment:</strong> Git, GitHub, Postman, Swagger/OpenAPI, Vite, Docker, Linux, AWS EC2, Railway, Vercel; basic deployment experience</p>
-        <p><strong>Testing:</strong> API testing and manual validation via Postman; automated unit testing workflows</p>
+        <p><strong>AI &amp; Modern Tools:</strong> AI API integration, basic RAG and MCP concepts, Cursor, GitHub Copilot, ChatGPT</p>
+        <p><strong>DevOps &amp; Testing:</strong> Git, GitHub, Postman, Swagger/OpenAPI, Vite, Docker, Linux, AWS EC2, Railway, Vercel</p>
       </div>
     </section>
 
     <section>
       <h2>PROFESSIONAL EXPERIENCE</h2>
       <article class="experience">
-        <div class="role"><span>Freelance Full-Stack Developer | Remote</span><span class="date">Mar 2026 – Present</span></div>
+        <div class="role"><span>Independent Technical Development &amp; Personal Projects — Remote</span><span class="date">Mar 2026 – Present</span></div>
         <ul>
-          <li>Architect and develop Laravel business applications, admin dashboards, and secure REST API features tailored to client specifications.</li>
-          <li>Use AI-assisted tools to accelerate implementation and troubleshoot production issues, rigorously reviewing generated changes before integration.</li>
-          <li>Integrate third-party APIs, including payment gateways, notification systems, and email providers.</li>
-          <li>Manage application deployment, server setup, and production troubleshooting across backend, frontend, and database tasks.</li>
+          <li>Build and refine full-stack Laravel applications with AI API integration, Sanctum authentication, and modern frontend workflows.</li>
         </ul>
       </article>
       <article class="experience">
-        <div class="role"><span>SciAstra | Full-Stack Developer | Noida, India</span><span class="date">Jan 2026 – Mar 2026</span></div>
+        <div class="role"><span>Full-Stack Developer | SciAstra (Contract) | Noida, India</span><span class="date">Jan 2026 – Mar 2026</span></div>
         <ul>
-          <li>Engineered backend core modules for a high-traffic EdTech platform serving 5,000+ active users.</li>
-          <li>Developed, optimized, and maintained REST API endpoints to reduce response latency and server overhead.</li>
-          <li>Built Filament and Livewire administration modules with role-based authentication and authorization (RBAC).</li>
-          <li>Optimized production MySQL structures, queries, and indexes for maintainability and performance.</li>
+          <li>Worked on backend features for an EdTech platform reported to serve 5,000+ active users.</li>
+          <li>Developed REST API endpoints and contributed to performance improvements.</li>
+          <li>Built administration features with Filament and Livewire; worked on role-based authentication and authorization.</li>
+          <li>Optimized MySQL queries and database structures for maintainability and performance.</li>
         </ul>
       </article>
       <article class="experience">
@@ -133,44 +135,24 @@
     <section>
       <h2>SELECTED PROJECTS</h2>
       <article class="project">
-        <div class="role"><span>AI-Powered Form Builder</span></div>
-        <p>Laravel and Livewire form builder with schema-driven validation, public forms, searchable submissions, CSV export, document import, and queued AI generation. <a href="https://github.com/puneettomar31/Laravel-Form-Builder-Assigment">Source code</a>.</p>
-      </article>
-      <article class="project">
-        <div class="role"><span>LumenAI Knowledge Workspace</span></div>
+        <div class="role"><span><a href="https://github.com/puneettomar31/lumenai">LumenAI Knowledge Workspace</a></span></div>
         <p>Laravel AI workspace with tenant-scoped teams, Sanctum APIs, document ingestion and RAG retrieval, and an MCP interface. <a href="https://github.com/puneettomar31/lumenai">Source code</a>.</p>
       </article>
       <article class="project">
-        <div class="role"><span>Workspace &amp; Task Manager</span></div>
-        <p>Laravel API-first SaaS project with multi-tenant workspaces, member access, projects and tasks, Sanctum authentication, MySQL, and Redis. <a href="https://github.com/puneettomar31/Laravel-Aws">Source code</a>.</p>
+        <div class="role"><span><a href="https://github.com/puneettomar31/Laravel-Form-Builder-Assigment">AI-Powered Form Builder</a></span></div>
+        <p>Laravel and Livewire form builder with schema-driven validation, public forms, searchable submissions, CSV export, document import, and queued AI generation. <a href="https://github.com/puneettomar31/Laravel-Form-Builder-Assigment">Source code</a> · <a href="https://laravel-form-builder-assigment.onrender.com">Live demo</a>.</p>
       </article>
       <article class="project">
-        <div class="role"><span>TalentHub Job Portal</span></div>
-        <p>Candidate and employer workflows, dashboards with application tracking, token-based authentication, and Redis caching using Laravel, React, TypeScript, MySQL, and Tailwind CSS. <a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project">Contact</a>.</p>
-      </article>
-      <article class="project">
-        <div class="role"><span>Laravel Filament Admin Dashboard</span></div>
-        <p>Filament dashboard with resource management, metrics widgets, data filters, and export features. <a href="project-filament-admin.html">Project details</a>.</p>
-      </article>
-      <article class="project">
-        <div class="role"><span>EdTech Course Management System</span></div>
-        <p>Course CRUD workflows, multi-tier enrollments, student progress tracking, and role permissions for educators, students, and administrators. <a href="project-edtech.html">Project details</a>.</p>
-      </article>
-      <article class="project">
-        <div class="role"><span>SciAstra Learning Platform</span></div>
-        <p>Engineered EdTech backend modules and REST APIs, Filament/Livewire administration with RBAC, and MySQL performance improvements. <a href="https://www.sciastra.com/">Company website</a>.</p>
-      </article>
-      <article class="project">
-        <div class="role"><span>Eglogics Business Applications &amp; API Modules</span></div>
-        <p>Developed Laravel/PHP backend modules and REST API features with JWT, middleware, request validation, query optimization, and Swagger/OpenAPI documentation. <a href="https://www.eglogics.com/">Company website</a>.</p>
+        <div class="role"><span><a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project%20walkthrough">TalentHub Job Portal</a></span></div>
+        <p>Candidate and employer workflows, dashboards with application tracking, token-based authentication, and Redis caching using Laravel, React, TypeScript, MySQL, and Tailwind CSS. <a href="mailto:puneettmr31@gmail.com?subject=TalentHub%20project%20walkthrough">Request project access</a>.</p>
       </article>
     </section>
 
     <section>
       <h2>EDUCATION &amp; CERTIFICATIONS</h2>
       <ul>
-        <li><strong>Master of Computer Applications (MCA)</strong> — Dr. A.P.J. Abdul Kalam Technical University, 2019</li>
-        <li><strong>Bachelor of Computer Applications (BCA)</strong> — C.C.S. University, 2017</li>
+        <li><strong>Master of Computer Applications (MCA)</strong> — Dr. A.P.J. Abdul Kalam Technical University</li>
+        <li><strong>Bachelor of Computer Applications (BCA)</strong> — C.C.S. University</li>
         <li><strong>Full Stack Development</strong> — Vidhyashala</li>
         <li><strong>Web Designing &amp; PHP Development</strong> — Aptron Solutions</li>
       </ul>
