@@ -15,7 +15,7 @@
     h1 { margin: 0; color: #176b56; font: 800 32px/1.2 'Manrope', sans-serif; letter-spacing: .04em; }
     .headline { margin-top: 6px; color: #454b5b; font-size: 17px; font-weight: 600; }
     .contact { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 14px; font-size: 13px; }
-    a { color: #176b56; text-decoration: none; }
+    a { color: #176b56; text-decoration: underline; text-underline-offset: 2px; }
     .summary { margin: 20px 0 0; }
     h2 { margin: 24px 0 10px; padding-bottom: 5px; border-bottom: 2px solid #176b56; color: #176b56; font: 700 16px/1.4 'Manrope', sans-serif; letter-spacing: .04em; }
     p { margin: 6px 0; }
@@ -30,7 +30,7 @@
     li { margin: 3px 0; }
     .actions { margin: 20px auto; text-align: center; }
     .actions button, .actions a { display: inline-block; margin: 0 5px; padding: 9px 15px; border: 0; border-radius: 8px; background: #176b56; color: #fff; cursor: pointer; font: inherit; }
-    .actions a { background: #45534c; }
+    .actions a { background: #45534c; text-decoration: none; }
     @media (max-width: 600px) {
       body { padding: 12px 8px; }
       .resume { padding: 24px 18px; }
@@ -46,7 +46,7 @@
       body { padding: 0; background: #fff; font-size: 9pt; line-height: 1.22; }
       .resume { max-width: none; padding: 0; border-radius: 0; box-shadow: none; }
       .actions { display: none; }
-      a { color: inherit; }
+      a { color: #176b56; text-decoration: underline; }
       .summary { margin-top: 9px; }
       h1 { font-size: 25pt; }
       h2 { margin: 11px 0 5px; padding-bottom: 3px; font-size: 11.5pt; break-after: avoid; }
@@ -94,7 +94,7 @@
     <section>
       <h2>PROFESSIONAL EXPERIENCE</h2>
       <article class="experience">
-        <div class="role"><span>Independent Developer | Personal Projects (Self-Directed)</span><span class="date">Mar 2026 – Present</span></div>
+        <div class="role"><span>Independent Developer | Personal Projects (Self-Directed)</span><span class="date">Apr 2026 – Present</span></div>
         <ul>
           <li>Building self-directed Laravel projects, including an AI knowledge workspace and a schema-driven form builder.</li>
           <li>Implementing REST APIs, tenant-scoped access, Sanctum authentication, database workflows, and responsive interfaces.</li>
